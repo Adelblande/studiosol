@@ -1,0 +1,285 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+
+  --orange-800: #c0661c;
+  --orange-600: #ff6600;
+  --orange-500: #ef6c00;
+
+  --grey-900: #262a34;
+  --grey-800: #222222;
+  --grey-600: #434854;
+  --grey-500: #9e9e9e;
+  --grey-100: #dddddd;
+
+  --green-500: #32bf00;
+
+  --red-500: #cc3300;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: "MontSerrat";
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--orange-600);
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+
+input {
+  font-family: "Roboto";
+  font-weight: 400;
+  border: 1px solid var(--grey-100);
+  border-radius: 4px;
+  height: 42px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+input:focus {
+  border: 1px solid var(--orange-500);
+}
+
+button {
+  font-family: "Roboto";
+  font-weight: 700;
+  border: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 70px;
+  height: 42px;
+  color: var(--white);
+  background-image: linear-gradient(var(--orange-500), var(--orange-800));
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.btn-new-match {
+  margin-top: 50px;
+  width: 160px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(var(--grey-600), var(--grey-500));
+}
+
+.btn-new-match i {
+  margin-right: 8px;
+}
+
+.message {
+  font-family: "MontSerrat";
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--orange-600);
+  margin-bottom: 30px;
+}
+
+.success {
+  color: var(--green-500);
+}
+
+.error {
+  color: var(--red-500);
+}
+
+.hide {
+  display: none;
+}
+
+.digital-number {
+  display: flex;
+}
+
+.digital-number svg .segment {
+  fill: var(--grey-100);
+  transition: 0.3s ease-in-out;
+}
+
+.digital-number svg.num-1 .b,
+.digital-number svg.num-1 .c,
+.digital-number svg.num-2 .a,
+.digital-number svg.num-2 .b,
+.digital-number svg.num-2 .d,
+.digital-number svg.num-2 .e,
+.digital-number svg.num-2 .g,
+.digital-number svg.num-3 .a,
+.digital-number svg.num-3 .b,
+.digital-number svg.num-3 .c,
+.digital-number svg.num-3 .d,
+.digital-number svg.num-3 .g,
+.digital-number svg.num-4 .b,
+.digital-number svg.num-4 .c,
+.digital-number svg.num-4 .f,
+.digital-number svg.num-4 .g,
+.digital-number svg.num-5 .a,
+.digital-number svg.num-5 .c,
+.digital-number svg.num-5 .d,
+.digital-number svg.num-5 .f,
+.digital-number svg.num-5 .g,
+.digital-number svg.num-6 .a,
+.digital-number svg.num-6 .c,
+.digital-number svg.num-6 .d,
+.digital-number svg.num-6 .e,
+.digital-number svg.num-6 .f,
+.digital-number svg.num-6 .g,
+.digital-number svg.num-7 .a,
+.digital-number svg.num-7 .b,
+.digital-number svg.num-7 .c,
+.digital-number svg.num-8 .a,
+.digital-number svg.num-8 .b,
+.digital-number svg.num-8 .c,
+.digital-number svg.num-8 .d,
+.digital-number svg.num-8 .e,
+.digital-number svg.num-8 .f,
+.digital-number svg.num-8 .g,
+.digital-number svg.num-9 .a,
+.digital-number svg.num-9 .b,
+.digital-number svg.num-9 .c,
+.digital-number svg.num-9 .d,
+.digital-number svg.num-9 .f,
+.digital-number svg.num-9 .g,
+.digital-number svg.num-0 .a,
+.digital-number svg.num-0 .b,
+.digital-number svg.num-0 .c,
+.digital-number svg.num-0 .d,
+.digital-number svg.num-0 .e,
+.digital-number svg.num-0 .f {
+  fill: var(--grey-900);
+}
+
+.digital-number svg.num-error-1 .b,
+.digital-number svg.num-error-1 .c,
+.digital-number svg.num-error-2 .a,
+.digital-number svg.num-error-2 .b,
+.digital-number svg.num-error-2 .d,
+.digital-number svg.num-error-2 .e,
+.digital-number svg.num-error-2 .g,
+.digital-number svg.num-error-3 .a,
+.digital-number svg.num-error-3 .b,
+.digital-number svg.num-error-3 .c,
+.digital-number svg.num-error-3 .d,
+.digital-number svg.num-error-3 .g,
+.digital-number svg.num-error-4 .b,
+.digital-number svg.num-error-4 .c,
+.digital-number svg.num-error-4 .f,
+.digital-number svg.num-error-4 .g,
+.digital-number svg.num-error-5 .a,
+.digital-number svg.num-error-5 .c,
+.digital-number svg.num-error-5 .d,
+.digital-number svg.num-error-5 .f,
+.digital-number svg.num-error-5 .g,
+.digital-number svg.num-error-6 .a,
+.digital-number svg.num-error-6 .c,
+.digital-number svg.num-error-6 .d,
+.digital-number svg.num-error-6 .e,
+.digital-number svg.num-error-6 .f,
+.digital-number svg.num-error-6 .g,
+.digital-number svg.num-error-7 .a,
+.digital-number svg.num-error-7 .b,
+.digital-number svg.num-error-7 .c,
+.digital-number svg.num-error-8 .a,
+.digital-number svg.num-error-8 .b,
+.digital-number svg.num-error-8 .c,
+.digital-number svg.num-error-8 .d,
+.digital-number svg.num-error-8 .e,
+.digital-number svg.num-error-8 .f,
+.digital-number svg.num-error-8 .g,
+.digital-number svg.num-error-9 .a,
+.digital-number svg.num-error-9 .b,
+.digital-number svg.num-error-9 .c,
+.digital-number svg.num-error-9 .d,
+.digital-number svg.num-error-9 .f,
+.digital-number svg.num-error-9 .g,
+.digital-number svg.num-error-0 .a,
+.digital-number svg.num-error-0 .b,
+.digital-number svg.num-error-0 .c,
+.digital-number svg.num-error-0 .d,
+.digital-number svg.num-error-0 .e,
+.digital-number svg.num-error-0 .f {
+  fill: var(--red-500);
+}
+
+.digital-number svg.num-success-1 .b,
+.digital-number svg.num-success-1 .c,
+.digital-number svg.num-success-2 .a,
+.digital-number svg.num-success-2 .b,
+.digital-number svg.num-success-2 .d,
+.digital-number svg.num-success-2 .e,
+.digital-number svg.num-success-2 .g,
+.digital-number svg.num-success-3 .a,
+.digital-number svg.num-success-3 .b,
+.digital-number svg.num-success-3 .c,
+.digital-number svg.num-success-3 .d,
+.digital-number svg.num-success-3 .g,
+.digital-number svg.num-success-4 .b,
+.digital-number svg.num-success-4 .c,
+.digital-number svg.num-success-4 .f,
+.digital-number svg.num-success-4 .g,
+.digital-number svg.num-success-5 .a,
+.digital-number svg.num-success-5 .c,
+.digital-number svg.num-success-5 .d,
+.digital-number svg.num-success-5 .f,
+.digital-number svg.num-success-5 .g,
+.digital-number svg.num-success-6 .a,
+.digital-number svg.num-success-6 .c,
+.digital-number svg.num-success-6 .d,
+.digital-number svg.num-success-6 .e,
+.digital-number svg.num-success-6 .f,
+.digital-number svg.num-success-6 .g,
+.digital-number svg.num-success-7 .a,
+.digital-number svg.num-success-7 .b,
+.digital-number svg.num-success-7 .c,
+.digital-number svg.num-success-8 .a,
+.digital-number svg.num-success-8 .b,
+.digital-number svg.num-success-8 .c,
+.digital-number svg.num-success-8 .d,
+.digital-number svg.num-success-8 .e,
+.digital-number svg.num-success-8 .f,
+.digital-number svg.num-success-8 .g,
+.digital-number svg.num-success-9 .a,
+.digital-number svg.num-success-9 .b,
+.digital-number svg.num-success-9 .c,
+.digital-number svg.num-success-9 .d,
+.digital-number svg.num-success-9 .f,
+.digital-number svg.num-success-9 .g,
+.digital-number svg.num-success-0 .a,
+.digital-number svg.num-success-0 .b,
+.digital-number svg.num-success-0 .c,
+.digital-number svg.num-success-0 .d,
+.digital-number svg.num-success-0 .e,
+.digital-number svg.num-success-0 .f {
+  fill: var(--green-500);
+}
