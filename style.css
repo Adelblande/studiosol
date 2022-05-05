@@ -37,7 +37,6 @@ h1 {
   text-transform: uppercase;
   font-weight: bold;
   color: var(--orange-600);
-  margin-top: 20px;
 }
 
 @media screen and (max-width: 600px) {
@@ -77,6 +76,7 @@ button:disabled {
 }
 
 .container {
+  background: linear-gradient(180deg, #eeeeee 0%, #ffffff 100%);
   display: flex;
   min-height: 100vh;
   align-items: center;

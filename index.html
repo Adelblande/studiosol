@@ -6,25 +6,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
     />
     <script src="https://unpkg.com/phosphor-icons"></script>
     <title>Qual é o número?</title>
   </head>
   <body>
     <div id="app">
-      <svg width="0" height="0" viewBox="0 0 0 0">
-        <defs>
-          <g id="seg-h">
-            <path d="M0 20 L20 40 L180 40 L200 20 L180 0 L20 0 Z"></path>
-          </g>
-          <g id="seg-v">
-            <path d="M20 0 L0 20 L0 180 L20 200 L40 180 L40 20 Z"></path>
-          </g>
-        </defs>
-      </svg>
-  
       <div class="container">
         <header>
           <h1>QUAL É O NúMERO?</h1>
@@ -36,7 +25,12 @@
               <svg class="num-0" width="80" height="135" viewBox="0 0 260 480">
                 <use xlink:href="#seg-h" class="segment a" x="30" y="0"></use>
                 <use xlink:href="#seg-v" class="segment b" x="220" y="30"></use>
-                <use xlink:href="#seg-v" class="segment c" x="220" y="250"></use>
+                <use
+                  xlink:href="#seg-v"
+                  class="segment c"
+                  x="220"
+                  y="250"
+                ></use>
                 <use xlink:href="#seg-h" class="segment d" x="30" y="440"></use>
                 <use xlink:href="#seg-v" class="segment e" x="0" y="250"></use>
                 <use xlink:href="#seg-v" class="segment f" x="0" y="30"></use>
@@ -53,8 +47,18 @@
           <input type="number" id="guess" placeholder="Digite o palpite" />
           <button id="btn-send">ENVIAR</button>
         </footer>
-      </div> 
+      </div>
     </div>
+    <svg width="0" height="0" viewBox="0 0 0 0">
+      <defs>
+        <g id="seg-h">
+          <path d="M0 20 L20 40 L180 40 L200 20 L180 0 L20 0 Z"></path>
+        </g>
+        <g id="seg-v">
+          <path d="M20 0 L0 20 L0 180 L20 200 L40 180 L40 20 Z"></path>
+        </g>
+      </defs>
+    </svg>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
